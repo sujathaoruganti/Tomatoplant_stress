@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="green-bg">
+    <header>
+        <h1>Water Stress in Tomato Plants</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </nav>
+    </header>
+    <h2>Register Page</h2>
+    <form method="POST" action="/register">
+        <input type="text" name="name" placeholder="Enter full name" required><br>
+        <input type="email" name="email" placeholder="Enter your email" required><br>
+        <input type="password" name="password" placeholder="Enter password" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="about">
+        <img src="/images/download.jpg" alt="About Tomato">
+        <p>Water Stress in Tomato Plants Using Deep learning...</p>
+    </div>
+</body>
+</html>

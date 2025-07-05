@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+      <style>
+        body{
+             background-color: #d5fdd5;
+        }
+    </style>
+</head>
+<body>
+    <h2>Prediction Result</h2>
+    <div class="result-box">
+        <p>{{ result }}</p>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+            padding: 20px;
+        }
+        .result-box {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #bbb;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .status {
+            text-align: center;
+            font-size: 20px;
+            color: #27ae60;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="result-box">
+    <h2>Prediction Result</h2>
+    <div class="status">Water Stress Level: <strong>{{ result }}</strong></div>
+    <h3>Input Summary</h3>
+    <table>
+        <tr><td>Soil Moisture</td><td>{{ inputs[0] }}</td></tr>
+        <tr><td>Leaf Temperature</td><td>{{ inputs[1] }}</td></tr>
+        <tr><td>Air Temperature</td><td>{{ inputs[2] }}</td></tr>
+        <tr><td>Humidity</td><td>{{ inputs[3] }}</td></tr>
+        <tr><td>Light Intensity</td><td>{{ inputs[4] }}</td></tr>
+        <tr><td>Soil pH</td><td>{{ inputs[5] }}</td></tr>
+        <tr><td>Electrical Conductivity</td><td>{{ inputs[6] }}</td></tr>
+        <tr><td>Stem Diameter</td><td>{{ inputs[7] }}</td></tr>
+        <tr><td>Leaf Thickness</td><td>{{ inputs[8] }}</td></tr>
+    </table>
+</div>
+</body>
+</html>

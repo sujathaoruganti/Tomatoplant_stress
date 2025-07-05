@@ -1,0 +1,161 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tomato Plant Water Stress Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f1f1;
+            padding: 30px;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Enter Values for Prediction</h2>
+        <form method="POST" action="/predict">
+  <label>Soil Moisture</label>
+  <input type="text" name="soil_moisture" required>
+
+  <label>Leaf Temperature</label>
+  <input type="text" name="leaf_temp" required>
+
+  <label>Air Temperature</label>
+  <input type="text" name="air_temp" required>
+
+  <label>Humidity</label>
+  <input type="text" name="humidity" required>
+
+  <label>Light Intensity</label>
+  <input type="text" name="light" required>
+
+  <label>Soil pH</label>
+  <input type="text" name="soil_ph" required>
+
+  <label>Electrical Conductivity</label>
+  <input type="text" name="ec" required>
+
+  <label>Stem Diameter</label>
+  <input type="text" name="stem_diameter" required>
+
+  <label>Leaf Thickness</label>
+  <input type="text" name="leaf_thickness" required>
+
+  <button type="submit">Predict</button>
+</form>
+
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Water Stress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Enter Sensor Data</h2>
+    <form method="POST" action="/predict">
+        <label>Soil Moisture</label>
+        <input type="text" name="soil_moisture" required>
+
+        <label>Leaf Temperature</label>
+        <input type="text" name="leaf_temp" required>
+
+        <label>Air Temperature</label>
+        <input type="text" name="air_temp" required>
+
+        <label>Humidity</label>
+        <input type="text" name="humidity" required>
+
+        <label>Light Intensity</label>
+        <input type="text" name="light" required>
+
+        <label>Soil pH</label>
+        <input type="text" name="soil_ph" required>
+
+        <label>Electrical Conductivity</label>
+        <input type="text" name="ec" required>
+
+        <label>Stem Diameter</label>
+        <input type="text" name="stem_diameter" required>
+
+        <label>Leaf Thickness</label>
+        <input type="text" name="leaf_thickness" required>
+
+        <button type="submit">Predict</button>
+    </form>
+</div>
+</body>
+</html>
